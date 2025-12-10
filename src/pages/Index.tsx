@@ -240,38 +240,42 @@ const Index = () => {
             </div>
 
             <div className="animate-fade-in relative">
-              <div className="absolute -top-8 -right-8 flex gap-2">
+              <div className="absolute -top-8 -right-8 flex gap-2 z-0">
                 <div className="w-3 h-32 bg-secondary/30 transform -skew-x-12"></div>
                 <div className="w-3 h-32 bg-primary/30 transform -skew-x-12"></div>
               </div>
-              <div className="bg-white p-8 rounded-2xl shadow-2xl">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon name="Scale" className="text-primary" size={32} />
+              
+              <div className="relative mb-8">
+                <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-primary/20 to-secondary/20 blur-3xl rounded-full"></div>
+                <img 
+                  src="https://cdn.poehali.dev/files/фото без фона (1).png"
+                  alt="Екатерина Ухова - Юрист по арбитражному процессу"
+                  className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-2xl relative z-10">
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div>
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <Icon name="Scale" className="text-primary" size={24} />
                     </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-xl">15+ лет</h3>
-                      <p className="text-muted-foreground">опыта в праве</p>
-                    </div>
+                    <h3 className="font-heading font-bold text-lg">15+</h3>
+                    <p className="text-xs text-muted-foreground">лет опыта</p>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center">
-                      <Icon name="Trophy" className="text-secondary" size={32} />
+                  <div>
+                    <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <Icon name="Trophy" className="text-secondary" size={24} />
                     </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-xl">200+</h3>
-                      <p className="text-muted-foreground">выигранных дел</p>
-                    </div>
+                    <h3 className="font-heading font-bold text-lg">200+</h3>
+                    <p className="text-xs text-muted-foreground">выигранных дел</p>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Icon name="Users" className="text-primary" size={32} />
+                  <div>
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <Icon name="Users" className="text-primary" size={24} />
                     </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-xl">500+</h3>
-                      <p className="text-muted-foreground">довольных клиентов</p>
-                    </div>
+                    <h3 className="font-heading font-bold text-lg">500+</h3>
+                    <p className="text-xs text-muted-foreground">клиентов</p>
                   </div>
                 </div>
               </div>
